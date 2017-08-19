@@ -26,18 +26,20 @@ class Shenanigans:
     @commands.command(pass_context=True)
     async def sort(self, ctx, *items):
         """sorts the list of items you give me """
-        await self.bot.say(items.sort())
-        pass
+        items.sort()
+        await self.bot.say(items
+        
 
     @commands.command(pass_context=True)
     async def pose(self, ctx):
         """strikes a random pose!"""
         pass
+        
     @commands.command(pass_context=True)
     async def king(self, ctx):
         """Crowns you King of Code Camp"""
         await self.bot.say('I declare Preator to be King of Code Camp!')
-        pass    
+           
 
 def setup(bot):
     bot.add_cog(Shenanigans(bot))
